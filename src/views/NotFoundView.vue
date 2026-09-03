@@ -1,0 +1,1 @@
+<template><main class="not-found"><p class="eyebrow">4PARED 360 / 404</p><h1>Por aquí<br/>no era.</h1><p>Esta página no existe. Volvamos al inicio para encontrar el siguiente paso.</p><RouterLink to="/" class="primary-link">Volver al inicio <span aria-hidden="true">↗</span></RouterLink></main></template>
