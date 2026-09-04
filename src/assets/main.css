@@ -103,6 +103,8 @@ img { display:block; max-width:100%; }
 .site-footer a { margin-left:auto; color:var(--ink); }
 .not-found { width:min(900px,calc(100% - 3rem)); margin:auto; padding:12vh 0; }
 .not-found h1 { font-size:clamp(3rem,7vw,6rem); }
+.not-found > p:not(.not-found-label) { max-width:34rem; margin-bottom:2rem; color:var(--muted); line-height:1.7; }
+.not-found-label { margin:0; color:#d84400; font-size:.72rem; font-weight:650; letter-spacing:.1em; }
 
 @media (max-width:64rem) {
   .profile { grid-template-columns:11rem 1fr; }
