@@ -4,5 +4,5 @@ import NotFoundView from './views/NotFoundView.vue'
 export default createRouter({
   history: createWebHistory(),
   routes: [{ path: '/', component: HomeView }, { path: '/:pathMatch(.*)*', component: NotFoundView }],
-  scrollBehavior(to, _from, savedPosition) { return savedPosition || (to.hash ? { el: to.hash, top: 100 } : { top: 0 }) },
+  scrollBehavior(to, _from, savedPosition) { return savedPosition || (to.hash ? { el: to.hash, top: (document.querySelector('header')?.getBoundingClientRect().height ?? 100) + 24 } : { top: 0 }) },
 })

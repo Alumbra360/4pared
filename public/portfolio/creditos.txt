@@ -1,0 +1,28 @@
+MUESTRAS DE REFERENCIA — 4PARED 360
+
+ENFOQUE DE MARCA
+4PARED produce fotografía y video para negocios. Ejemplos: marcas personales, tecnología y restaurantes.
+
+IMÁGENES ACTUALES
+rodaje-natural-v2.webp y rodaje-natural-v2-640.webp: portada conceptual editada con image_gen; personas ecuatorianas ficticias, cámara compacta sobre trípode, exterior de cafetería con luz natural y sin equipos de iluminación.
+rodaje-ecuador.webp y rodaje-ecuador-640.webp: anterior portada con luces, archivada, imagen conceptual editada con image_gen para representar personas ecuatorianas ficticias grabando un video frente a una cafetería.
+rodaje-exterior.webp y rodaje-exterior-640.webp: anterior portada exterior, archivada, imagen conceptual editada con image_gen; grabación frente a una cafetería, con cámara, trípode, luz portátil y reflector.
+agencia-rodaje.webp y agencia-rodaje-640.webp: anterior portada de estudio, archivada, editada con image_gen, agencia grabando una presentación con cámara, trípode y dos luces.
+camara-rodaje.webp y camara-rodaje-640.webp: anterior portada conceptual gastronómica, conservada como archivo.
+tecnologia.webp, marca-personal.webp, restaurante.webp y versiones de 640 px:
+Referencias conceptuales generadas con IA para ilustrar fotografía comercial.
+No representan clientes reales, encargos realizados ni resultados comerciales de 4PARED.
+
+VIDEO ACTUAL
+«Chef working in a large kitchen» — Mixkit, clip 43048, 8 s.
+Licencia indicada en la página fuente: Mixkit Stock Video Free License.
+Fuente: https://mixkit.co/free-stock-video/chef-working-in-a-large-kitchen-43048/
+Archivo: https://assets.mixkit.co/videos/43048/43048-720.mp4
+Términos: https://mixkit.co/license/#videoFree
+Se usa como referencia de contenido para restaurantes, no como producción propia de 4PARED.
+
+ARCHIVO DE LA PROPUESTA ANTERIOR (no usado en la página actual)
+paisaje.webp, retrato.webp y materia.webp: imágenes conceptuales generadas con IA.
+El clip anterior flower.mp4 procedía de MDN, bajo CC0: https://github.com/mdn/interactive-examples/blob/main/LICENSE
+
+Sustituir las referencias por material propio antes de presentarlas como portafolio de trabajos realizados.
