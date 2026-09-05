@@ -3,6 +3,9 @@
   "name": "cuatro-pared-360",
   "main": "dist/server/index.js",
   "compatibility_date": "2026-07-29",
+  "routes": [
+    { "pattern": "4pared.alumbra360.com", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
