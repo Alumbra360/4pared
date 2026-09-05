@@ -7,8 +7,8 @@ Una edición, sin variantes. Se conserva la estructura actual de la página y se
 ## Archivos
 
 - Original: /Users/jonnathan/Documents/ChatGPT/4pared/output/imagegen/4pared-rodaje-ecuador.png (1672 × 941).
-- Web: /Users/jonnathan/Documents/ChatGPT/4pared/sitio-web/public/portfolio/rodaje-ecuador.webp.
-- Compacta: /Users/jonnathan/Documents/ChatGPT/4pared/sitio-web/public/portfolio/rodaje-ecuador-640.webp.
+- Web archivada: /Users/jonnathan/Documents/ChatGPT/4pared/sitio-web/docs/archive-assets/portfolio/rodaje-ecuador.webp.
+- Compacta archivada: /Users/jonnathan/Documents/ChatGPT/4pared/sitio-web/docs/archive-assets/portfolio/rodaje-ecuador-640.webp.
 
 ## Prompt exacto
 

@@ -28,4 +28,4 @@ Node 24.12 o superior (también compatible con Node 22.18+).
 
 La página combina fotografía y video comerciales con una dirección artística. La meta propuesta es comunicar valor, generar confianza y despertar interés en nuevos clientes. Incluye galería ampliable con controles de teclado y reproducción de un clip local mediante controles nativos.
 
-Las tres imágenes son referencias conceptuales generadas con IA, identificadas en la interfaz. El clip de cocina «Chef working in a large kitchen» proviene de Mixkit con Free License; no se atribuye a 4PARED. Los créditos completos están en `public/portfolio/creditos.txt`. Sustituir las muestras por fotografías y videos propios para presentar trabajos reales.
+Las imágenes de muestra son referencias conceptuales generadas con IA, identificadas en la interfaz. Los créditos completos están en `docs/portfolio-credits.txt`. Sustituir las muestras por fotografías y videos propios para presentar trabajos reales. Los recursos retirados de producción se conservan en `docs/archive-assets/`.
