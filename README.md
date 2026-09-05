@@ -10,6 +10,7 @@ Node 24.12 o superior (también compatible con Node 22.18+).
 - `npm run dev`: iniciar el servidor local.
 - `npm run build`: comprobar tipos y generar sitio y Worker.
 - `npm run preview`: revisar la compilación.
+- `npm run deploy:check`: compilar y validar el paquete de Cloudflare sin publicarlo.
 - `npm run deploy`: compilar y desplegar con Wrangler, después de configurar la cuenta de Cloudflare.
 
 ## Contenido
@@ -22,7 +23,7 @@ Node 24.12 o superior (también compatible con Node 22.18+).
 
 ## Publicación
 
-`.openai/hosting.json` conserva la identidad del Site. Los archivos generados están en `dist/`. No se requieren base de datos, secretos ni servicios externos para navegar por el sitio. La primera publicación se mantiene privada para revisión.
+`.openai/hosting.json` conserva la identidad del Site. Los archivos generados están en `dist/`. `wrangler.jsonc` configura el Worker, los recursos estáticos y la respuesta de la aplicación para rutas desconocidas. `public/_headers` define caché y cabeceras básicas de seguridad; `public/.assetsignore` evita que los archivos internos del build se publiquen como recursos estáticos. No se requieren base de datos, secretos ni servicios externos para navegar por el sitio.
 
 ## Dirección artística
 
