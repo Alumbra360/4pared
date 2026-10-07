@@ -15,8 +15,7 @@ for (const file of ['index.html', 'styles.css', 'content.js', 'app.js']) {
 await cp(path.join(source, 'assets'), path.join(target, 'assets'), { recursive: true })
 
 const html = await readFile(path.join(target, 'index.html'), 'utf8')
-const headers = await readFile(path.join(root, 'dist/_headers'), 'utf8')
-if (!html.includes('noindex') || !headers.includes(`/${proposal}/*`)) {
-  throw new Error('The proposal must retain its noindex directives before deployment.')
+if (!html.includes('content="index, follow"')) {
+  throw new Error('The proposal must retain the approved indexing policy.')
 }
 console.log(`Proposal published in build: /${proposal}/`)

@@ -42,3 +42,10 @@
 - Cambios: `scripts/build-proposals.mjs` copia únicamente HTML, CSS, JavaScript y assets al resultado; `package.json` lo ejecuta al final del build; documentación actualizada.
 - Verificación: `npm ci`, compilación Vue/TypeScript y Worker correctas; el resultado incluye la propuesta y reglas de cabecera/robots. No se modificó el nombre del Worker ni el dominio.
 - Estado: corrección preparada para GitHub y despliegue automático; confirmación pública pendiente.
+
+## 2026-10-07 17:12:28 -0500 — Indexación habilitada por solicitud del usuario
+
+- Estado: cambio preparado para publicación.
+- Cambios: meta `index, follow`; retirado X-Robots-Tag noindex; robots.txt permite rastreo general, incluidos los agentes antes bloqueados. Ajustado control del build y documentación. Sustituye la política anterior de no indexación.
+- Alcance: web principal y propuesta Kathy M. Se conserva la corrección pendiente que incorpora la propuesta al paquete de Cloudflare.
+- Verificación: compilación y revisión de directivas; confirmación pública pendiente del despliegue.

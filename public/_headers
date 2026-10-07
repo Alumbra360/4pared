@@ -16,9 +16,7 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
 /Odontologa-KathyM
-  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex
   Referrer-Policy: no-referrer
 
 /Odontologa-KathyM/*
-  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex
   Referrer-Policy: no-referrer

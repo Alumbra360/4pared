@@ -33,4 +33,4 @@ Las imágenes de muestra son referencias conceptuales generadas con IA, identifi
 
 ## Propuesta Kathy M
 
-`npm run build` incorpora automáticamente `Odontologa-KathyM/` en `dist/Odontologa-KathyM/` mediante `scripts/build-proposals.mjs`. Publica únicamente HTML, CSS, JavaScript y assets. La ruta pública es `/Odontologa-KathyM/`; no se agrega a menús ni sitemaps. Las reglas noindex y de rastreo se conservan en `public/_headers` y `public/robots.txt`.
+`npm run build` incorpora automáticamente `Odontologa-KathyM/` en `dist/Odontologa-KathyM/` mediante `scripts/build-proposals.mjs`. Publica únicamente HTML, CSS, JavaScript y assets. La ruta pública es `/Odontologa-KathyM/`; no se agrega a menús ni sitemaps. La propuesta permite indexación por petición del propietario; `public/robots.txt` permite el rastreo.
