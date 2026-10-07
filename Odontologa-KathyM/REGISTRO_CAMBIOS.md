@@ -20,3 +20,18 @@
 - Cambios: carpeta `Odontologa-KathyM/` añadida como proyecto estático independiente sobre una copia actualizada de la rama `main`. No se modifica la aplicación Vue existente ni su configuración de compilación o despliegue.
 - Verificación: revisión del repositorio remoto, sintaxis JavaScript y alcance de archivos. Se excluyen archivos del sistema y cambios ajenos a la propuesta.
 - Alcance: almacenamiento del proyecto en GitHub; no incorpora la página al despliegue de la web principal.
+
+## 2026-10-07 16:59:57 -0500 — Subida a GitHub confirmada
+
+- Estado: completado.
+- Resultado: commit `d42bf2c` enviado a `main` de `Alumbra360/4pared`; Git confirmó el avance remoto de `c14446c` a `d42bf2c`.
+- Alcance: 13 archivos de `Odontologa-KathyM/`; la web principal no se modificó. No se ejecutó despliegue.
+- Referencia: https://github.com/Alumbra360/4pared/commit/d42bf2c
+- Esta confirmación posterior al push se conserva en la bitácora local.
+
+## 2026-10-07 17:03:59 -0500 — Reglas contra indexación y recopilación
+
+- Estado: implementado; preparado para subir a GitHub.
+- Cambios: meta robots ampliada, `_headers` y `robots.txt` para alojamiento independiente; reglas HTTP y robots limitadas a `/Odontologa-KathyM` en `public/` del repositorio remoto. Documentación de alcance y límites.
+- Criterio: los buscadores conservan acceso para leer noindex; los agentes de recopilación enumerados reciben Disallow. No se añadió la propuesta a navegación ni sitemaps. No equivale a autenticación.
+- Verificación: comprobaciones estáticas de directivas, alcance de rutas y diff. El servidor local no interpreta `_headers`; verificación HTTP de producción pendiente de despliegue.

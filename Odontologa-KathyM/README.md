@@ -43,3 +43,13 @@ La imagen es una referencia generada con IA, no el consultorio de Kathy M. Los e
 - Revisión visual mediante capturas de escritorio, móvil, formatos e inversión.
 
 No se midieron Core Web Vitals reales de producción ni se realizó una certificación completa de accesibilidad. La página incluye `noindex,nofollow` por tratarse de una propuesta para una cliente; esto no equivale a control de acceso.
+
+## Indexación y rastreo
+
+El HTML declara `noindex, nofollow, noarchive, nosnippet, noimageindex`. `_headers` añade `X-Robots-Tag` a todas las respuestas cuando esta carpeta se publica como raíz en Cloudflare Pages/Workers con recursos estáticos. `robots.txt` bloquea los agentes de recopilación y asistentes indicados, y permite que otros buscadores lean `noindex`. No se incluyen enlaces en la web principal ni entradas en sitemaps.
+
+Para alojar bajo `/Odontologa-KathyM/`, el repositorio principal incorpora cabeceras limitadas a esa ruta y reglas en `public/robots.txt`; el resto del sitio conserva su indexabilidad. Un robots.txt dentro de una subcarpeta no controla el dominio. El servidor local de Python sirve el HTML con meta robots, pero no interpreta `_headers`.
+
+Estas reglas no ocultan la URL ni impiden el acceso de robots que las ignoran. Para confidencialidad real se requiere autenticación del lado del servidor (por ejemplo Cloudflare Access). Si el repositorio GitHub es público, estas reglas no protegen sus archivos. No se cambió la visibilidad del repositorio. Las cabeceras y robots del alojamiento deben verificarse después de un despliegue; este cambio no despliega la propuesta.
+
+Referencias: https://developers.google.com/search/docs/crawling-indexing/block-indexing y https://developers.cloudflare.com/workers/static-assets/headers/

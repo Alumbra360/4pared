@@ -1,0 +1,36 @@
+# Search engines may read the noindex directive; this is not access control.
+User-agent: *
+Disallow:
+
+User-agent: GPTBot
+Disallow: /Odontologa-KathyM
+
+User-agent: ChatGPT-User
+Disallow: /Odontologa-KathyM
+
+User-agent: OAI-SearchBot
+Disallow: /Odontologa-KathyM
+
+User-agent: ClaudeBot
+Disallow: /Odontologa-KathyM
+
+User-agent: Claude-User
+Disallow: /Odontologa-KathyM
+
+User-agent: Claude-SearchBot
+Disallow: /Odontologa-KathyM
+
+User-agent: CCBot
+Disallow: /Odontologa-KathyM
+
+User-agent: Google-Extended
+Disallow: /Odontologa-KathyM
+
+User-agent: Bytespider
+Disallow: /Odontologa-KathyM
+
+User-agent: Amazonbot
+Disallow: /Odontologa-KathyM
+
+User-agent: meta-externalagent
+Disallow: /Odontologa-KathyM
