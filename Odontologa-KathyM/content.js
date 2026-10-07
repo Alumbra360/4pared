@@ -1,0 +1,17 @@
+/* Contenido editable. Los valores comerciales provienen del plan facilitado por el usuario. */
+window.proposal = {
+  contact: { whatsapp: '593962154993', email: '' },
+  formats: {
+    reels: { count:'08',title:'Reels para conectar',description:'Tu voz y tu experiencia en piezas que educan, responden preguntas y acercan tu atención a nuevas personas.',features:['Guion y dirección creativa','Producción y edición','Publicación incluida'],kicker:'CONOCE TU PRÓXIMA CONSULTA',headline:'La confianza<br>empieza aquí.',footer:'Una mirada al espacio y a la experiencia.' },
+    micro: { count:'03',title:'Micro Reels para recordar',description:'Ideas breves y detalles de tu entorno profesional. Pequeñas piezas que refuerzan el reconocimiento de tu marca.',features:['Ideas visuales breves','Edición para formato vertical','Publicación incluida'],kicker:'LOS DETALLES IMPORTAN',headline:'Un espacio.<br>Otra sensación.',footer:'Una idea clara. Un momento de conexión.' },
+    fotos: { count:'05',title:'Fotografía con intención',description:'Un banco visual profesional para presentar tu marca, tu espacio y tu forma de trabajar con coherencia.',features:['Dirección visual','5 fotografías profesionales','Entrega de imágenes; publicación no especificada'],kicker:'UNA MARCA CON IDENTIDAD',headline:'Tu espacio.<br>Tu esencia.',footer:'Fotografía conceptual de referencia.' },
+    carruseles: { count:'03',title:'Carruseles que explican',description:'Una secuencia de ideas para responder dudas y ayudar a tu audiencia a entender el siguiente paso.',features:['Contenido educativo','Diseño de secuencias','Publicación incluida'],kicker:'TU PRIMERA VISITA · 01 / 03',headline:'¿Por dónde<br>empezamos?',footer:'Conocernos. Escucharte. Orientarte.' }
+  },
+  months: [
+    { name:'Construir',title:'Una base para empezar a captar.',description:'Conocemos tu marca y tu proceso de atención. Priorizamos 1 o 2 servicios y activamos la primera prueba hacia el final del mes.',items:['Diagnóstico y estrategia inicial','Producción y publicación mensual','Landing de validación e indicadores','Primera pauta: aprox. $50 adicionales'] },
+    { name:'Aprender',title:'Escuchar también es estrategia.',description:'Estudiamos qué ocurre entre el interés y la cita: preguntas, objeciones, tiempos de respuesta y puntos de abandono.',items:['Contenido y captación continuos','Análisis de objeciones y fricciones','Ajustes de mensajes y seguimiento','Reinversión según resultados'] },
+    { name:'Organizar',title:'Más claridad. Mejor seguimiento.',description:'Usamos los aprendizajes para ajustar la marca y los servicios, implementar el CRM base y definir metas con evidencia.',items:['Ajustes de marca personal','Revisión de servicios y oportunidades','CRM propio de 4PARED','Metas basadas en la línea inicial'] },
+    { name:'Automatizar',title:'Menos tareas repetitivas.',description:'Iniciamos respuestas de mensajes y recordatorios de citas. Construimos una base de conocimiento para futura asistencia con IA.',items:['Respuestas de mensajes','Recordatorios de citas','Preguntas, objeciones y respuestas validadas','IA de apoyo, sin diagnósticos clínicos'] },
+    { name:'Expandir',title:'Un sistema que aprende contigo.',description:'Relacionamos el origen de los contactos con su recorrido comercial y ajustamos las automatizaciones que ya están en marcha.',items:['CRM ampliado y trazabilidad','Campaña → contacto → cita → resultado','Mejora de automatizaciones','Preparación para optimización continua'] }
+  ]
+};
