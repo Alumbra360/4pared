@@ -30,3 +30,7 @@ Node 24.12 o superior (también compatible con Node 22.18+).
 La página combina fotografía y video comerciales con una dirección artística. La meta propuesta es comunicar valor, generar confianza y despertar interés en nuevos clientes. Incluye galería ampliable con controles de teclado y reproducción de un clip local mediante controles nativos.
 
 Las imágenes de muestra son referencias conceptuales generadas con IA, identificadas en la interfaz. Los créditos completos están en `docs/portfolio-credits.txt`. Sustituir las muestras por fotografías y videos propios para presentar trabajos reales. Los recursos retirados de producción se conservan en `docs/archive-assets/`.
+
+## Propuesta Kathy M
+
+`npm run build` incorpora automáticamente `Odontologa-KathyM/` en `dist/Odontologa-KathyM/` mediante `scripts/build-proposals.mjs`. Publica únicamente HTML, CSS, JavaScript y assets. La ruta pública es `/Odontologa-KathyM/`; no se agrega a menús ni sitemaps. Las reglas noindex y de rastreo se conservan en `public/_headers` y `public/robots.txt`.

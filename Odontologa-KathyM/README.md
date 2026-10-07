@@ -53,3 +53,7 @@ Para alojar bajo `/Odontologa-KathyM/`, el repositorio principal incorpora cabec
 Estas reglas no ocultan la URL ni impiden el acceso de robots que las ignoran. Para confidencialidad real se requiere autenticación del lado del servidor (por ejemplo Cloudflare Access). Si el repositorio GitHub es público, estas reglas no protegen sus archivos. No se cambió la visibilidad del repositorio. Las cabeceras y robots del alojamiento deben verificarse después de un despliegue; este cambio no despliega la propuesta.
 
 Referencias: https://developers.google.com/search/docs/crawling-indexing/block-indexing y https://developers.cloudflare.com/workers/static-assets/headers/
+
+## Integración con el Worker principal
+
+La compilación del repositorio ahora copia la página y sus assets a `dist/Odontologa-KathyM/`. Al desplegar esa compilación, la propuesta queda accesible en `/Odontologa-KathyM/`. No se copian bitácoras, documentación ni archivos de configuración de la propuesta al directorio público. Esta integración sustituye la limitación de despliegue descrita en las entradas históricas anteriores.

@@ -35,3 +35,10 @@
 - Cambios: meta robots ampliada, `_headers` y `robots.txt` para alojamiento independiente; reglas HTTP y robots limitadas a `/Odontologa-KathyM` en `public/` del repositorio remoto. Documentación de alcance y límites.
 - Criterio: los buscadores conservan acceso para leer noindex; los agentes de recopilación enumerados reciben Disallow. No se añadió la propuesta a navegación ni sitemaps. No equivale a autenticación.
 - Verificación: comprobaciones estáticas de directivas, alcance de rutas y diff. El servidor local no interpreta `_headers`; verificación HTTP de producción pendiente de despliegue.
+
+## 2026-10-07 17:10:10 -0500 — Integración de la propuesta en el build de Cloudflare
+
+- Diagnóstico: Workers Builds marcó exitoso el commit anterior, pero el build publicaba solo la web Vue; `Odontologa-KathyM/` no entraba en `dist`. La URL pública de la propuesta devolvía HTTP 404.
+- Cambios: `scripts/build-proposals.mjs` copia únicamente HTML, CSS, JavaScript y assets al resultado; `package.json` lo ejecuta al final del build; documentación actualizada.
+- Verificación: `npm ci`, compilación Vue/TypeScript y Worker correctas; el resultado incluye la propuesta y reglas de cabecera/robots. No se modificó el nombre del Worker ni el dominio.
+- Estado: corrección preparada para GitHub y despliegue automático; confirmación pública pendiente.
