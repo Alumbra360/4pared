@@ -51,3 +51,7 @@ La política vigente permite indexación de la web principal y de Kathy M por so
 ## Integración con el Worker principal
 
 La compilación del repositorio ahora copia la página y sus assets a `dist/Odontologa-KathyM/`. Al desplegar esa compilación, la propuesta queda accesible en `/Odontologa-KathyM/`. No se copian bitácoras, documentación ni archivos de configuración de la propuesta al directorio público. Esta integración sustituye la limitación de despliegue descrita en las entradas históricas anteriores.
+
+## Reunión mensual de seguimiento
+
+Incluye una reunión cada mes de hasta 1 hora con la profesional o su equipo. La sección `#seguimiento-mensual` presenta revisión de indicadores, agenda desplegable, decisiones del próximo período y ciclo de mejora continua. También se incluye en el resumen descargable y en las responsabilidades de 4PARED.
