@@ -43,6 +43,13 @@
 - Verificación: `npm ci`, compilación Vue/TypeScript y Worker correctas; el resultado incluye la propuesta y reglas de cabecera/robots. No se modificó el nombre del Worker ni el dominio.
 - Estado: corrección preparada para GitHub y despliegue automático; confirmación pública pendiente.
 
+## 2026-10-07 17:11:03 -0500 — Subida de corrección no autorizada
+
+- Estado: parcial; corrección local completada, envío pendiente.
+- Verificación: `wrangler deploy --dry-run` completado sin errores; 61 archivos de assets.
+- Resultado: commit local `1801bf8` en `/tmp/4pared-kathy-upload`; el envío a GitHub fue rechazado por el usuario, no se volvió a intentar.
+- Respaldo: `docs/cloudflare-build-fix.patch` conserva el commit completo para aplicarlo en otra copia del repositorio. No se desplegó la corrección.
+
 ## 2026-10-07 17:12:28 -0500 — Indexación habilitada por solicitud del usuario
 
 - Estado: cambio preparado para publicación.
@@ -50,9 +57,50 @@
 - Alcance: web principal y propuesta Kathy M. Se conserva la corrección pendiente que incorpora la propuesta al paquete de Cloudflare.
 - Verificación: compilación y revisión de directivas; confirmación pública pendiente del despliegue.
 
+## 2026-10-07 17:16:07 -0500 — Publicación e indexabilidad comprobadas
+
+- Estado: publicado en workers.dev; dominio personalizado pendiente de corregir.
+- GitHub: push confirmado de `1270073` a `3b8328f`, incluyendo la integración del build y la autorización de indexación.
+- Verificación pública: `https://4pared.alumbra365.workers.dev/Odontologa-KathyM/` devuelve HTTP 200 y meta `index, follow`, sin X-Robots-Tag noindex. `/robots.txt` permite rastreo.
+- Pendiente: `https://4pared.alumbra360.com/Odontologa-KathyM/` continúa en HTTP 404. Requiere revisar asociación o enrutamiento del dominio en Cloudflare. No se modificó esa configuración.
+- La consulta privada de checks de GitHub no fue autorizada; se verificó el resultado público. La indexabilidad no implica inclusión inmediata en buscadores.
+
+## 2026-10-07 19:12:17 -0500 — Tarjetas visuales en La oportunidad
+
+- Estado: implementado localmente; sin publicación.
+- Cambios: `index.html` sustituye los tres principios por tarjetas de Instagram, WhatsApp y consulta odontológica; `styles.css` incorpora composición de escritorio en tres columnas y móvil en una, estilos de Reel y conversación. Se conserva el resto del contenido preexistente.
+- Recursos: `assets/consulta-oportunidad.jpg`, imagen ilustrativa generada con IA; procedencia documentada en `docs/ASSETS.md`. Original de trabajo conservado en `tmp/consulta-oportunidad-original.png`, fuera de la carpeta pública.
+- Verificación: tres tarjetas detectadas, referencias de imágenes locales comprobadas, atributos alt presentes y llaves CSS equilibradas. Imagen generada inspeccionada.
+- Limitación: no se verificó la composición en navegador; el servidor local no fue autorizado y la política del navegador impide abrir URLs file. No se reintentaron esas acciones.
+
+## 2026-10-08 00:08:54 -0500 — Tarjetas con apariencia de redes sociales
+
+- Estado: implementado localmente, sin publicar.
+- Cambios: `index.html` incorpora iconos decorativos de interacción y presentación social para la consulta; `styles.css` sustituye las tarjetas rectangulares por marcos verticales con esquinas redondeadas, sombras, rotaciones leves y posiciones escalonadas. Se conserva separación entre columnas y los textos quedan fuera de los marcos. A 1000 px o menos se usa una columna; WhatsApp crece según su contenido.
+- Verificación: HTML correctamente anidado, tres tarjetas y dos barras sociales presentes, imágenes locales existentes y llaves CSS equilibradas. No se ejecutó revisión visual en navegador por las restricciones de vista previa identificadas en la entrada anterior.
+
+## 2026-10-08 00:15:50 -0500 — Video y fotografía de Kathy en tarjetas sociales
+
+- Estado: completado localmente; sin publicación remota.
+- Cambios: `index.html` incorpora `assets/Kathy video web.mp4` con controles nativos y reproducción manual en Instagram y `assets/kathy cliente.png` en consulta; actualiza la nota de procedencia. `styles.css` refina marcos, sombras, separación y desnivel de las tarjetas, ajusta WhatsApp al formato vertical y deja libres los controles del video. `docs/ASSETS.md` documenta los recursos del usuario.
+- Verificación: referencias locales existentes, llaves CSS equilibradas y sintaxis JavaScript correcta. Vista previa en navegador: video cargado (6,63 segundos), foto visible, tres tarjetas sin intersección en escritorio de 1440 px y en móvil de 390 px, sin desbordamiento horizontal.
+
 ## 2026-10-08 00:24:31 -0500 — Reunión mensual de seguimiento y mejora
 
 - Estado: implementado; verificación y publicación pendientes.
 - Cambios: sección editorial después del sistema de medición y antes de la hoja de ruta; destaca 1 reunión mensual de hasta 1 hora, decisiones y prioridades, agenda desplegable y ciclo Medir → Revisar → Decidir → Ejecutar → Volver a medir. Resumen descargable y alcance de responsabilidades actualizados.
 - Alcance: incorporación aplicada a la versión local y a la copia actualizada de GitHub; se conservan los cambios locales previos de video y fotografía sin incorporarlos a este envío.
 - Verificación completada: compilación y sintaxis JavaScript correctas; sección revisada visualmente en escritorio y móvil, sin desbordamiento a 320/390/768/1440 px; agenda desplegable funcional y resumen descargable con duración y contenido de la reunión. Sin errores de ejecución.
+
+## 2026-10-08 00:28:49 -0500 — Subida de la reunión mensual confirmada
+
+- Estado: subida a GitHub completada; verificación final de despliegue pendiente.
+- Referencia: commit `2a6e58a`, push a `main` confirmado.
+- Dominio: la primera consulta devolvió HTTP 200 con la versión previa; la segunda comprobación fue rechazada por el usuario y no se repitió. La actualización se entrega al despliegue automático de Cloudflare.
+
+## 2026-10-08 00:56:39 -0500 — Sincronización de cambios pendientes para Cloudflare
+
+- Estado: integración completada; envío y comprobación pública pendientes.
+- Motivo: publicar los cambios locales de la propuesta que faltaban en GitHub.
+- Cambios: incorporados a la copia conectada a `Alumbra360/4pared`, rama `main`, los textos de portada, tarjetas sociales, estilos, video y fotografía de Kathy, imagen ilustrativa y documentación de recursos. Se conserva la reunión mensual ya publicada.
+- Verificación: compilación Vue/TypeScript y Worker correcta; sintaxis JavaScript correcta; referencias locales del HTML comprobadas; paquete de Cloudflare validado con 64 assets, incluido el video de 6.534.019 bytes.

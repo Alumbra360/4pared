@@ -9,4 +9,12 @@
 
 Use case: photorealistic-natural. Asset type: editorial background photo for a premium Spanish dental personal-brand commercial proposal, conceptual image not a real clinic. A beautiful minimalist modern dental studio, warm ivory dental chair on right-center, refined dental examination lamp above, pale warm plaster walls, subtle brushed metal, indirect daylight through sheer curtains, one sculptural plant, restrained architectural interior photography, editorial luxury but credible clinical space, warm off-white and charcoal palette, no people, no logos, no text. Vertical 3:4 composition, compelling crop and depth, chair occupying lower two-thirds, soft natural shadows, exquisite realistic materials.
 
-Las maquetas de teléfono y las gráficas están construidas con HTML y CSS. No se presentan como piezas publicadas, resultados comprobados ni videos reales.
+Las maquetas de teléfono y las gráficas están construidas con HTML y CSS. No se presentan como piezas publicadas ni resultados comprobados. La primera tarjeta incorpora el video proporcionado por el usuario.
+
+## Tarjetas de oportunidad
+
+- `assets/consulta-oportunidad.jpg`: foto conceptual generada con Imagegen, convertida a JPEG para la web. Muestra una odontóloga y una paciente conversando con un modelo dental en una clínica luminosa, tonos crema y verde salvia, sin logos ni texto. No representa a Kathy M ni a pacientes reales.
+- Original generado: `/Users/jonnathan/.codex/generated_images/01a118d6-c11f-7b42-a6f5-499664123319/exec-7ae6554f-43c0-473f-b45b-9e3e6975a3cc.png`.
+- Instagram: `assets/Kathy video web.mp4`, video proporcionado por el usuario, con reproducción manual y controles nativos.
+- Consulta: `assets/kathy cliente.png`, fotografía vertical proporcionada por el usuario. Sustituye la imagen conceptual en esta tarjeta.
+- WhatsApp: conversación ficticia maquetada en HTML/CSS con texto seleccionable; sin datos reales ni envío de mensajes.
