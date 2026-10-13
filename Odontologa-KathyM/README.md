@@ -24,7 +24,7 @@ Vista previa: http://127.0.0.1:4173. El servidor debe permanecer en ejecución p
 
 ## Decisiones comerciales
 
-La fuente es el plan aportado en esta conversación. Se conservan los 8 Reels, 3 Micro Reels, 5 fotografías y 3 carruseles mensuales; jornada de hasta 5 horas; publicación especificada; una revisión; pauta separada; mensualidades de $100 a $500; total inicial de $1.500; pago mensual anticipado y permanencia propuesta de 12 meses.
+La fuente es el plan aportado en esta conversación. Se conservan los 10 Reels, 6 Micro Reels, 5 fotografías y 4 carruseles mensuales; jornada de hasta 5 horas; publicación especificada; una revisión; pauta separada; mensualidades de $100 a $500; total inicial de $1.500; pago mensual anticipado y permanencia propuesta de 12 meses.
 
 El documento no define tarifa desde el mes 6, tratamiento de impuestos ni cantidad adicional de piezas publicitarias. Se presentan como aspectos a confirmar, sin inventar importes o volúmenes. No se atribuyen resultados, testimonios ni casos realizados.
 

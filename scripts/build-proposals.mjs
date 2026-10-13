@@ -9,7 +9,7 @@ const target = path.join(root, 'dist', proposal)
 
 // Publish only the page and its assets, not internal notes or deployment files.
 await mkdir(target, { recursive: true })
-for (const file of ['index.html', 'styles.css', 'content.js', 'app.js']) {
+for (const file of ['index.html', 'styles.css', 'content.js', 'app.js', 'journey.css', 'journey.js', 'analytics.css', 'analytics.js']) {
   await copyFile(path.join(source, file), path.join(target, file))
 }
 await cp(path.join(source, 'assets'), path.join(target, 'assets'), { recursive: true })

@@ -104,3 +104,47 @@
 - Motivo: publicar los cambios locales de la propuesta que faltaban en GitHub.
 - Cambios: incorporados a la copia conectada a `Alumbra360/4pared`, rama `main`, los textos de portada, tarjetas sociales, estilos, video y fotografía de Kathy, imagen ilustrativa y documentación de recursos. Se conserva la reunión mensual ya publicada.
 - Verificación: compilación Vue/TypeScript y Worker correcta; sintaxis JavaScript correcta; referencias locales del HTML comprobadas; paquete de Cloudflare validado con 64 assets, incluido el video de 6.534.019 bytes.
+
+## 2026-10-08 00:59:49 -0500 — Envío a GitHub y despliegue automático iniciado
+
+- Estado: push completado; confirmación final de publicación pendiente.
+- Resultado: commit `6bb54e1` enviado a `main` de `Alumbra360/4pared`; avance remoto desde `2a6e58a`. GitHub confirmó `Workers Builds: 4pared` en progreso.
+- Verificación: primera consulta pública mostró aún la versión anterior. Consultas posteriores de estado y URLs públicas rechazadas por el usuario; no se reintentaron. No se confirma la finalización del despliegue.
+- Referencia: https://github.com/Alumbra360/4pared/commit/6bb54e1
+
+## 2026-10-13 16:49:50 -0500 — Ajuste de entregables de la sección 2
+
+- Estado: completado localmente.
+- Cambios: eliminada la franja superior de cifras; detalles de formatos actualizados a 10 Reels, 6 Micro Reels, 5 fotografías profesionales y 4 carruseles. Alcance de publicación, resumen descargable y documentación sincronizados.
+- Verificación: ausencia del bloque deliverables y cantidades correctas en datos interactivos; sintaxis JavaScript comprobada. No se realizó publicación remota.
+
+## 2026-10-13 17:11:35 -0500 — Recorrido narrativo de la sección 03
+
+- Estado: completado localmente; sin publicación remota.
+- Motivo: convertir la ruta comercial existente en una historia visual de captación y atención.
+- Cambios:
+  - `index.html`: sustituida únicamente la sección `#sistema` e incorporadas referencias a los nuevos estilos y script. Siete capítulos: contenido, anuncio, landing, contacto, CRM, seguimiento y cita; protagonista ficticia Lucía, interfaces conceptuales y acciones entre etapas. Conservados íntegramente los tres desplegables estratégicos originales y la nota de medición, incluidos plazos y límites de IA.
+  - `journey.css` y `journey.js`: escena fija en escritorios amplios con suficiente altura; capítulos con maquetas integradas en móvil y pantallas bajas. Activación por scroll, navegación directa y teclado, marcador de Lucía, movimiento reducido, altura estable de escena y contenido disponible sin JavaScript. Sin nuevas dependencias.
+  - `assets/lucia-journey.webp` y `assets/kathy-journey.webp`: personaje generado en tres poses y derivado optimizado de la fotografía existente; aproximadamente 74 KB combinados. Procedencia y prompt en `docs/ASSETS.md`.
+- Verificación: sintaxis JS y `git diff --check`; otras secciones idénticas byte a byte respecto al inicio de esta tarea. Chromium: siete etapas por clic, acciones entre maquetas, flechas/Home/End y scroll en ambos sentidos; responsive a 320/390/768/1024/1440 px; siete escenas visibles sin JS; texto base al 200 % a 390 px sin desbordamiento en la sección; navegación táctil de al menos 44 px; sin errores JS ni HTTP. Revisión de capturas de las escenas en escritorio y móvil. Se reutilizó el servidor local existente en el puerto 4173.
+- Hallazgo ajeno al alcance: la tarjeta preexistente de WhatsApp en la sección de oportunidad desborda a 320 px. No se modificó; la sección 03 no presenta ese desbordamiento.
+- Se conservaron cambios preexistentes en README, app.js, content.js, index.html, bitácora y .DS_Store.
+
+## 2026-10-13 17:21:04 -0500 — Dashboard de medición y decisiones mensuales
+
+- Estado: completado localmente; sin publicación remota.
+- Motivo: aplicar el prompt adjunto a «Un mes de datos. Decisiones para avanzar.»; el recorrido de Lucía permanece intacto.
+- Cambios:
+  - `index.html`: rediseñada exclusivamente `#seguimiento-mensual`, con dashboard, selectores, KPIs comerciales prioritarios, indicadores de captación, curvas semanales, hitos, embudo, conclusiones y trazabilidad. Conservadas reunión mensual de hasta una hora, agenda original y ciclo de mejora.
+  - `analytics.js`: cuatro periodos ficticios coherentes, prueba corta al finalizar mes 1, CRM desde mes 3 y seguimiento desde mes 4. Cálculos derivados, estados «Sin datos», comparación válida solo entre meses 3 y 4, interacción por clic y teclado, curvas activables, lectura semanal y tabla alternativa. Interpretaciones vinculadas al KPI y al periodo.
+  - `analytics.css`: dashboard responsive, gráficos SVG, controles táctiles, ayudas desplegables, animación de entrada y soporte de movimiento reducido. Sin dependencias nuevas.
+  - `docs/ANALYTICS.md`: contrato del adaptador, fórmulas, supuestos y requisitos de futura conexión a datos reales. No se implementaron integraciones externas.
+- Verificación: Chromium, valores calculados en los cuatro periodos, datos ausentes y comparaciones, selección de KPIs, curvas (incluido estado vacío), lectura semanal por teclado, etapas del embudo, hitos y ayudas. Sin desbordamiento de esta sección a 320/390/768/1024/1440 px ni con texto al 200 % a 390 px; explicación alternativa visible sin JavaScript. Sin errores de ejecución. Capturas de escritorio y móvil revisadas; sintaxis JS y `git diff --check` correctos. Comparación byte a byte confirma que ninguna otra sección cambió respecto al inicio de esta solicitud.
+
+## 2026-10-13 17:23:23 -0500 — Preparación de subida al repositorio
+
+- Estado: integración y validación completadas; envío pendiente en esta entrada.
+- Cambios: preparada una copia actualizada de `Alumbra360/4pared`, rama `main`, en `/private/tmp/4pared-publish-20261013`; incorporados recorrido interactivo, dashboard, recursos optimizados, documentación y ajustes locales previos de entregables. Excluido `.DS_Store`.
+- `scripts/build-proposals.mjs` del repositorio remoto: ampliada la lista de archivos públicos para incluir los cuatro nuevos archivos CSS/JS. Este script no existe en la carpeta local de la propuesta; el cambio está en la copia de integración.
+- Descripción del cambio: `docs/DESCRIPCION_CAMBIOS.md`.
+- Verificación: `npm ci` y `npm run build` completados; compilaciones de cliente y Worker correctas, propuesta copiada al directorio público. No se alteró el lockfile de dependencias.
