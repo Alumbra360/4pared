@@ -34,3 +34,10 @@
 - Cambios: actualizados `planes/creacion-contenido/index.html` y `styles.css` con colores y tipografía del kit, logotipo original, imagen ilustrativa existente, iconos SVG, navegación persistente y resumen inicial de precio y condiciones. Añadidos recursos locales y README con procedencia.
 - Accesibilidad: foco visible, enlace para saltar al contenido, alternativas textuales, contraste conforme a los tokens de marca y controles táctiles.
 - Verificación: recursos y anclas válidos; imágenes cargadas en navegador; acordeón expandido correctamente; sin desbordamiento horizontal en 390 y 1440 px. Sin cambios en condiciones comerciales ni publicación externa.
+
+## 2026-10-14 — Inclusión del plan en la compilación de producción
+
+- Corregido `scripts/build-proposals.mjs` para copiar HTML, CSS y assets de `planes/creacion-contenido` a `dist/planes/creacion-contenido`.
+- Verificado que la página estaba en main, pero faltaba su inclusión en la compilación consumida por Cloudflare.
+- Validación previa: TypeScript, compilaciones Vite y Wrangler dry-run completados; Wrangler no pudo guardar su log por restricciones del entorno.
+- Este cambio prepara la publicación desde Git; el resultado del despliegue automático de Cloudflare requiere comprobación independiente.
