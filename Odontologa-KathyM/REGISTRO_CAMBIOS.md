@@ -148,3 +148,11 @@
 - `scripts/build-proposals.mjs` del repositorio remoto: ampliada la lista de archivos públicos para incluir los cuatro nuevos archivos CSS/JS. Este script no existe en la carpeta local de la propuesta; el cambio está en la copia de integración.
 - Descripción del cambio: `docs/DESCRIPCION_CAMBIOS.md`.
 - Verificación: `npm ci` y `npm run build` completados; compilaciones de cliente y Worker correctas, propuesta copiada al directorio público. No se alteró el lockfile de dependencias.
+
+## 2026-10-13 17:24:29 -0500 — Subida a GitHub confirmada
+
+- Estado: push completado a `main` de `Alumbra360/4pared`.
+- Resultado: remoto actualizado de `6bb54e1` a `08e9ad7`. Descripción incluida en el commit y en `docs/DESCRIPCION_CAMBIOS.md` del repositorio.
+- Verificación: `git push origin main` confirmó la actualización sin errores. La compilación local completa pasó antes del envío. No se comprobó la finalización del despliegue automático de Cloudflare.
+- Referencia: https://github.com/Alumbra360/4pared/commit/08e9ad7
+- Esta confirmación posterior al push queda en la bitácora local.

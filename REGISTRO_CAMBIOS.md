@@ -41,3 +41,31 @@
 - Verificado que la página estaba en main, pero faltaba su inclusión en la compilación consumida por Cloudflare.
 - Validación previa: TypeScript, compilaciones Vite y Wrangler dry-run completados; Wrangler no pudo guardar su log por restricciones del entorno.
 - Este cambio prepara la publicación desde Git; el resultado del despliegue automático de Cloudflare requiere comprobación independiente.
+## 2026-10-14 17:00:33 -0500 — Preparación para producción
+
+- Estado: parcial; no desplegado.
+- Ajustado `scripts/build-proposals.mjs` en `/private/tmp/4pared-publish-f6940ff` para copiar la página y sus assets a `dist/planes/creacion-contenido/`.
+- Copia del ajuste guardada en `planes/creacion-contenido/deployment/build-plan.patch`.
+- Verificación: compilación Vue/TypeScript y Vite correcta; Wrangler dry-run leyó 81 archivos y validó el Worker. El entorno impidió escribir el log de Wrangler fuera del directorio autorizado.
+- Pendiente: comprobación de sesión Cloudflare rechazada en el diálogo de permisos; no se ejecutó deploy ni se subió el ajuste de compilación.
+
+## 2026-10-14 17:07:32 -0500 — Requisito de marca destacado
+
+- Actualizados HTML y CSS del plan: aviso antes del precio, nueva sección «Primero, tu marca. Después, su contenido», acceso en navegación y requisito reiterado en condiciones y preguntas frecuentes.
+- Detallados manual de marca, identidad visual, público objetivo, propuesta de valor y posicionamiento.
+- Verificación: contenido y anclas visibles en navegador tras recarga. Cambio local pendiente de subir a GitHub.
+
+## 2026-10-14 — Ruta visual del proceso
+
+- Convertida la sección del proceso en una lista ordenada con tres estaciones numeradas, iconos y conexión discontinua; disposición horizontal en escritorio y vertical en móvil.
+- Añadido destino final de publicación a cargo del cliente; conservados los plazos y alcance del servicio.
+- Verificación: vista de navegador y estructura accesible revisadas; diff sin errores de espacios. Cambio local pendiente de publicación.
+
+## 2026-10-14 20:17:05 -0500 — Reconciliación del repositorio local con GitHub
+
+- Estado: completado localmente, sin commit ni push.
+- Motivo: `main` local y remoto tenían historiales sin ancestro común y faltaba seguimiento remoto.
+- Cambios: `main` se basó en `origin/main` (`203a381`), se configuró su seguimiento y se reaplicaron los cambios locales pendientes. Se combinaron ambas bitácoras conservando sus entradas. `.DS_Store` permanece local e ignorado según la configuración remota.
+- Respaldo: historial anterior en `codex/backup-before-git-repair`; cambios pendientes en el stash «Respaldo antes de reconciliar con origin/main»; copia de los archivos previos, incluidos materiales históricos, en `/private/tmp/4pared-before-git-repair.tar.gz`.
+- Verificación: sin entradas de índice en conflicto; archivos nuevos de Kathy idénticos al respaldo; HTML del plan analizado y recursos relativos existentes; comprobaciones de espacios correctas. No se ejecutó compilación completa.
+- Pendientes: cambios recuperados preparados para revisión y posterior commit/push; PDFs, fuentes temporales y parche de despliegue conservados sin seguimiento.

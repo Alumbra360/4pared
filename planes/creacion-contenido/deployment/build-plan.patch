@@ -1,0 +1,18 @@
+diff --git a/scripts/build-proposals.mjs b/scripts/build-proposals.mjs
+index b54cc2e..bb4bb2e 100644
+--- a/scripts/build-proposals.mjs
++++ b/scripts/build-proposals.mjs
+@@ -19,3 +19,13 @@ if (!html.includes('content="index, follow"')) {
+   throw new Error('The proposal must retain the approved indexing policy.')
+ }
+ console.log(`Proposal published in build: /${proposal}/`)
++
++// Keep the content plan available at its public subdirectory.
++const plan = 'planes/creacion-contenido'
++const planTarget = path.join(root, 'dist', plan)
++await mkdir(planTarget, { recursive: true })
++for (const file of ['index.html', 'styles.css']) {
++  await copyFile(path.join(root, plan, file), path.join(planTarget, file))
++}
++await cp(path.join(root, plan, 'assets'), path.join(planTarget, 'assets'), { recursive: true })
++console.log(`Content plan published in build: /${plan}/`)
